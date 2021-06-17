@@ -1,0 +1,8 @@
+POST http://localhost:8082/compatibility
+Content-Type: application/json
+
+{
+  "2": "1,3"
+}
+
+###
