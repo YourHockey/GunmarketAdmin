@@ -28,7 +28,7 @@
     <dependencies>
         <dependency>
             <groupId>ru.gunmarket</groupId>
-            <artifactId>GunmarketCommonDataLayer</artifactId>
+            <artifactId>gunmarket-common-data-layer</artifactId>
             <version>${gunamrketcommondatalayer.version}</version>
         </dependency>
         <dependency>
