@@ -1,4 +1,4 @@
-name: Build & Test after push to main branch
+name: Build, Test & Deploy after push to main branch
 on:
   push:
     branches:
@@ -15,7 +15,8 @@ jobs:
           java-version: 15
           java-package: jdk
           architecture: x64
-      - name: Build with Maven
+      - name: Publish to GitHub Packages
         env:
+          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mvn -B verify
+        run: mvn -s .github/settings.xml -B deploy
