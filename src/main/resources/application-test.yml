@@ -2,7 +2,6 @@ server:
   port: 8082
 
 spring:
-  boot:
   datasource:
     username: postgres
     password: root

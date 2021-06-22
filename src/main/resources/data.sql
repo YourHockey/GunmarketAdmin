@@ -1,5 +1,5 @@
 SELECT 1;
---
+
 -- INSERT INTO public.type (lower, medium, show_name, upper) VALUES (null, 'ГЛАДКОСТВОЛЬНОЕ_ОРУЖИЕ', 'Гладкоствольное оружие', 'ОРУЖИЕ');
 -- INSERT INTO public.type (lower, medium, show_name, upper) VALUES (null, 'НАРЕЗНОЕ_ОРУЖИЕ', 'Нарезное оружие', 'ОРУЖИЕ');
 --

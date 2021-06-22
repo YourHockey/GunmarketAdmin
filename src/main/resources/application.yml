@@ -2,10 +2,9 @@ server:
   port: 8082
 
 spring:
-  boot:
   datasource:
-    username: vakoom
-    password: vakoomvakoom
+    username: postgres
+    password: postgres
     url: jdbc:postgresql://ebdb.cxlkhwegb8ap.eu-west-1.rds.amazonaws.com:5432/gunmarketx
     driver-class-name: org.postgresql.Driver
     initialization-mode: always
