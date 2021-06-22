@@ -2,7 +2,7 @@ package ru.vakoom.gunmarket.admin.web;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.ResponseEntity;
-import ru.gunmarket.model.Product;
+import ru.vakoom.gunmarket.commondatalayer.model.Product;
 
 import java.util.List;
 

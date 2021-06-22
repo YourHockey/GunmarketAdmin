@@ -2,8 +2,8 @@ package ru.vakoom.gunmarket.admin.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-import ru.gunmarket.model.Type;
 import ru.vakoom.gunmarket.admin.repo.TypeRepo;
+import ru.vakoom.gunmarket.commondatalayer.model.Type;
 
 import java.util.Optional;
 

@@ -4,8 +4,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-import ru.gunmarket.model.Product;
-import ru.gunmarket.service.ProductService;
+import ru.vakoom.gunmarket.admin.service.ProductService;
+import ru.vakoom.gunmarket.commondatalayer.model.Product;
 
 import java.util.Arrays;
 import java.util.HashSet;

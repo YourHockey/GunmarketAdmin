@@ -7,8 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.gunmarket.model.Product;
-import ru.gunmarket.scrapper.ProductScrapper;
+import ru.vakoom.gunmarket.admin.scrapper.ProductScrapper;
+import ru.vakoom.gunmarket.commondatalayer.model.Product;
 
 import java.util.List;
 

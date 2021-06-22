@@ -1,7 +1,7 @@
 package ru.vakoom.gunmarket.admin.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.gunmarket.model.Type;
+import ru.vakoom.gunmarket.commondatalayer.model.Type;
 
 import java.util.Optional;
 

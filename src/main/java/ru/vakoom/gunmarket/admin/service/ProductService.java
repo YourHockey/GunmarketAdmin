@@ -3,9 +3,9 @@ package ru.vakoom.gunmarket.admin.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
-import ru.gunmarket.exception.ProductNotFoundException;
-import ru.gunmarket.model.Product;
-import ru.gunmarket.repo.ProductRepo;
+import ru.vakoom.gunmarket.admin.exception.ProductNotFoundException;
+import ru.vakoom.gunmarket.commondatalayer.model.Product;
+import ru.vakoom.gunmarket.commondatalayer.repo.ProductRepo;
 
 import java.util.List;
 import java.util.Optional;

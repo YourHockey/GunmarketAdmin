@@ -10,13 +10,13 @@ import org.jsoup.select.Elements;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
-import ru.gunmarket.exception.TypeNotFoundException;
-import ru.gunmarket.model.Brand;
-import ru.gunmarket.model.Product;
-import ru.gunmarket.model.Type;
+import ru.vakoom.gunmarket.admin.exception.TypeNotFoundException;
 import ru.vakoom.gunmarket.admin.service.BrandService;
 import ru.vakoom.gunmarket.admin.service.ProductService;
 import ru.vakoom.gunmarket.admin.service.TypeService;
+import ru.vakoom.gunmarket.commondatalayer.model.Brand;
+import ru.vakoom.gunmarket.commondatalayer.model.Product;
+import ru.vakoom.gunmarket.commondatalayer.model.Type;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
