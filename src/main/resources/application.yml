@@ -5,8 +5,8 @@ spring:
   boot:
   datasource:
     username: vakoom
-    password: kirillosintsev
-    url: jdbc:postgresql://aa17nsxfsyne7r.cxlkhwegb8ap.eu-west-1.rds.amazonaws.com:5432/gunmarketx
+    password: vakoomvakoom
+    url: jdbc:postgresql://ebdb.cxlkhwegb8ap.eu-west-1.rds.amazonaws.com:5432/gunmarketx
     driver-class-name: org.postgresql.Driver
     initialization-mode: always
     separator: ;;
