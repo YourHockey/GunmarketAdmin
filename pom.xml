@@ -7,7 +7,7 @@
     <groupId>ru.gunmarket</groupId>
     <artifactId>Admin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <name>Admin</name>
 
     <parent>
