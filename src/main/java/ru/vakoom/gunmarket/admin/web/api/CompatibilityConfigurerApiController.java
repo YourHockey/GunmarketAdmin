@@ -1,4 +1,4 @@
-package ru.vakoom.gunmarket.admin.web;
+package ru.vakoom.gunmarket.admin.web.api;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

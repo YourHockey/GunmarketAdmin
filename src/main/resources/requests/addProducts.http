@@ -1,0 +1,71 @@
+POST http://localhost:8082/products
+Content-Type: application/json
+
+[
+  {
+    "name": "Карабин TR9",
+    "extendedName": "TR9 PARADOX",
+    "srcImageUrl": "https://kalashnikov.market/product-images/9956/_0.jpg",
+    "brand": "Концерн Калашников",
+    "type": "Гладкоствольное оружие"
+  },
+  {
+    "name": "Карабин TG2 Magnum",
+    "extendedName": "TG2 366 Magnum",
+    "srcImageUrl": "https://kalashnikov.market/product-images/16587/TG2;%20366%20Magnum;%20415%20%d0%bc%d0%bc_1.jpg",
+    "brand": "Концерн Калашников",
+    "type": "Гладкоствольное оружие"
+  },
+  {
+    "name": "Карабин TG2",
+    "extendedName": "TG2 366ТКМ",
+    "srcImageUrl": "https://kalashnikov.market/product-images/9947/_0.jpg",
+    "brand": "Концерн Калашников",
+    "type": "Гладкоствольное оружие"
+  },
+  {
+    "name": "Карабин TG2 исп 03",
+    "extendedName": "TG2 366ТКМ исп.03",
+    "srcImageUrl": "https://kalashnikov.market/product-images/16056/TG2%20%d0%b8%d1%81%d0%bf.03;%20366%20%d0%a2%d0%9a%d0%9c;%20341%20%d0%bc%d0%bc_1.jpg",
+    "brand": "Концерн Калашников",
+    "type": "Гладкоствольное оружие"
+  },
+  {
+    "name": "Карабин TR3",
+    "extendedName": "TR3 366ТКМ",
+    "srcImageUrl": "https://kalashnikov.market/product-images/14342/TR3_366_1.jpg",
+    "brand": "Концерн Калашников",
+    "type": "Гладкоствольное оружие"
+  },
+  {
+    "name": "Карабин TG3 01",
+    "extendedName": "TG3 9,6/53 исп.01",
+    "srcImageUrl": "https://kalashnikov.market/product-images/12535/G6363.jpg",
+    "brand": "Концерн Калашников",
+    "type": "Гладкоствольное оружие"
+  },
+  {
+    "name": "Карабин TG3 02",
+    "extendedName": "TG3 9,6/53 исп.02",
+    "srcImageUrl": "https://kalashnikov.market/product-images/9936/_0.jpg",
+    "brand": "Концерн Калашников",
+    "type": "Гладкоствольное оружие"
+  },
+  {
+    "name": "Карабин TG3",
+    "extendedName": "TG3 9,6/53 в дереве",
+    "srcImageUrl": "https://kalashnikov.market/product-images/9944/_0.jpg",
+    "brand": "Концерн Калашников",
+    "type": "Гладкоствольное оружие"
+  },
+  {
+    "name": "Карабин TG3 02",
+    "extendedName": "TG3 9,6/53 исп.02",
+    "srcImageUrl": "https://kalashnikov.market/product-images/9936/_0.jpg",
+    "brand": "Концерн Калашников",
+    "type": "Гладкоствольное оружие"
+  }
+]
+
+###
+###

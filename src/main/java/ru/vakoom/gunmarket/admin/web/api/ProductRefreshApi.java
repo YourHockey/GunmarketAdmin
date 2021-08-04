@@ -1,4 +1,4 @@
-package ru.vakoom.gunmarket.admin.web;
+package ru.vakoom.gunmarket.admin.web.api;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.ResponseEntity;

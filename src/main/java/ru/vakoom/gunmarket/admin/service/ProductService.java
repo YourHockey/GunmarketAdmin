@@ -37,6 +37,11 @@ public class ProductService {
                 .collect(Collectors.toList());
     }
 
+    @Deprecated(since = "заменить на бач сейв")
+    public void saveList(List<Product> products){
+        products.forEach(this::save);
+    }
+
     public void save(Product product) {
         productRepo.saveOrUpdate(product);
     }
