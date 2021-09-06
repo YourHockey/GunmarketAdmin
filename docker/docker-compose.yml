@@ -1,0 +1,27 @@
+version: '3.1'
+
+services:
+
+  db-gunmarketx:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=gunmarketx
+    volumes:
+      - ./init-gunmarketx.sql:/docker-entrypoint-initdb.d/init-gunmarketx.sql
+    ports:
+      - 35432:5432
+
+  db-scrapper:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=scrapper
+    volumes:
+      - ./init-gunmarketx.sql:/docker-entrypoint-initdb.d/init-scrapper.sql
+    ports:
+      - 35433:5432
