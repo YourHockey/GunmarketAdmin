@@ -14,6 +14,7 @@ public class OfferService {
     private final OfferRepo offerRepo;
 
     public List<Offer> refresh(List<Offer> offers) {
+        offerRepo.deleteAll();
         List<Offer> savedOffers = offerRepo.saveAll(offers);
         return savedOffers;
     }

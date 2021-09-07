@@ -1,4 +1,4 @@
-package ru.vakoom.gunmarket.admin.web.controller;
+package ru.vakoom.gunmarket.admin.web.api;
 
 
 import lombok.RequiredArgsConstructor;
@@ -20,7 +20,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-public class OfferApiController {
+public class OfferReceivingApiController implements OfferReceivingApi {
 
     private final OfferService offerService;
     private final OfferMapper offerMapper;
@@ -28,10 +28,9 @@ public class OfferApiController {
 
     @CrossOrigin
     @PostMapping(value = "/refresh", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<OfferDto>> refresh(@RequestBody List<OfferDto> offerDtos) {
+    public ResponseEntity<List<OfferDto>> receiveOffersFromScrapping(@RequestBody List<OfferDto> offerDtos) {
         log.info("Number of final offers incoming request :{}", offerDtos.size());
         List<Offer> offers = offerMapper.offerDtosToOffers(offerDtos);
-        offerService.deleteAll();
         List<Offer> refreshedOffers = offerService.refresh(offers);
         log.info("Number of offers saved to db :{}", refreshedOffers.size());
         //ToDo не работает пересчет

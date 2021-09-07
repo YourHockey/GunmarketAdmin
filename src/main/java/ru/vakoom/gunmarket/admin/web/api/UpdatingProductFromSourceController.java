@@ -16,7 +16,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-public class ProductRefreshApiController implements ProductRefreshApi {
+public class UpdatingProductFromSourceController implements UpdatingProductFromSourceApi {
 
     private final ProductService productService;
     private final ProductScrapper productScrapper;

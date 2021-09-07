@@ -1,4 +1,4 @@
-package ru.vakoom.gunmarket.admin.web.controller;
+package ru.vakoom.gunmarket.admin.web.api;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +14,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-public class ProductApiController implements ProductApi {
+public class ProductConfigurerApiController implements ProductConfigurerApi {
 
     private final ProductService productService;
     private final ProductMapper productMapper;

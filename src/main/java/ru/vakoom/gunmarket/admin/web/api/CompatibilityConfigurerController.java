@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-public class CompatibilityConfigurerApiController {
+public class CompatibilityConfigurerController implements CompatibilityConfigurerApi {
 
     private final ProductService productService;
 
