@@ -4,8 +4,8 @@ server:
 spring:
   datasource:
     username: postgres
-    password: postgres
-    url: jdbc:postgresql://ebdb.cxlkhwegb8ap.eu-west-1.rds.amazonaws.com:5432/gunmarketx
+    password: root
+    url: jdbc:postgresql://localhost:35432/gunmarketx
     driver-class-name: org.postgresql.Driver
     initialization-mode: always
     separator: ;;
@@ -23,5 +23,3 @@ spring:
 logging:
   file:
     name: databasefiller-app.log
-
-product.photo.dir: images
