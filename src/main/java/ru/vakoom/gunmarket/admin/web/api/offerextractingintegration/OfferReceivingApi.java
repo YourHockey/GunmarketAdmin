@@ -1,10 +1,8 @@
-package ru.vakoom.gunmarket.admin.web.api;
+package ru.vakoom.gunmarket.admin.web.api.offerextractingintegration;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
 import ru.vakoom.gunmarket.commondatalayer.dto.OfferDto;
-import ru.vakoom.gunmarket.commondatalayer.model.Product;
 
 import java.util.List;
 

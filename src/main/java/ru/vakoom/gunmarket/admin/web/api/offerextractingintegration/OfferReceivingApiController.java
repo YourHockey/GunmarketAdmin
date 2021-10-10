@@ -1,4 +1,4 @@
-package ru.vakoom.gunmarket.admin.web.api;
+package ru.vakoom.gunmarket.admin.web.api.offerextractingintegration;
 
 
 import lombok.RequiredArgsConstructor;

@@ -6,6 +6,8 @@ import ru.vakoom.gunmarket.admin.exception.ShopNotFoundException;
 import ru.vakoom.gunmarket.admin.repo.ShopRepo;
 import ru.vakoom.gunmarket.commondatalayer.model.Shop;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class ShopService {
@@ -15,5 +17,4 @@ public class ShopService {
     public Shop getByName(String name) {
         return shopRepo.findByName(name).orElseThrow(ShopNotFoundException::new);
     }
-
 }

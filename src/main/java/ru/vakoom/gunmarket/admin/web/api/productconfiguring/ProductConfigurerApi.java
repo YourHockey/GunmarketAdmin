@@ -1,4 +1,4 @@
-package ru.vakoom.gunmarket.admin.web.api;
+package ru.vakoom.gunmarket.admin.web.api.productconfiguring;
 
 import io.swagger.annotations.ApiOperation;
 import ru.vakoom.gunmarket.admin.web.dto.ProductDto;

@@ -1,4 +1,4 @@
-package ru.vakoom.gunmarket.admin.web.api;
+package ru.vakoom.gunmarket.admin.web.api.refreshingfromsourse;
 
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
