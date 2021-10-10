@@ -32,6 +32,7 @@ public class OfferMapper {
                 .setProductId(offer.getProduct().getProductId().toString())
                 .setShopName(offer.getShop().getName())
                 .setLink(offer.getLink())
+                .setInStock(offer.isInStock())
                 .setPrice(offer.getPrice());
     }
 
@@ -43,6 +44,7 @@ public class OfferMapper {
                 .setLink(offerDto.getLink())
                 .setPrice(offerDto.getPrice())
                 .setProduct(product)
+                .setInStock(offerDto.getInStock())
                 .setShop(shop);
     }
 

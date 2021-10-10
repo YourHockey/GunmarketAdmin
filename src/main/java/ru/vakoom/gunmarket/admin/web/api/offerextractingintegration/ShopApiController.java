@@ -26,7 +26,7 @@ public class ShopApiController {
 
     @CrossOrigin
     @GetMapping(value = "/shop/{shopName}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<ShopDto> getByName(@PathVariable String shopName) {
+    public ShopDto getByName(@PathVariable String shopName) {
         Shop shop = shopService.getByName(shopName);
         return shopMapper.shopToShopDto(shop);
     }
