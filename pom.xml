@@ -22,10 +22,16 @@
         <maven.compiler.target>11</maven.compiler.target>
         <postgres.version>42.2.6</postgres.version>
         <swagger.version>2.9.2</swagger.version>
+        <jackson.version>2.13.0</jackson.version>
         <gunamrketcommondatalayer.version>0.0.1-SNAPSHOT</gunamrketcommondatalayer.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
         <dependency>
             <groupId>ru.gunmarket</groupId>
             <artifactId>gunmarket-common-data-layer</artifactId>

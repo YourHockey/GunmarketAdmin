@@ -33,7 +33,6 @@ public class OfferReceivingApiController implements OfferReceivingApi {
         List<Offer> offers = offerMapper.offerDtosToOffers(offerDtos);
         List<Offer> refreshedOffers = offerService.refresh(offers);
         log.info("Number of offers saved to db :{}", refreshedOffers.size());
-        //ToDo не работает пересчет
         productService.recalculateMinMaxPrice();
         return ResponseEntity.ok(offerMapper.offersToOfferDtos(refreshedOffers));
     }
