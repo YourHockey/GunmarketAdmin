@@ -23,7 +23,7 @@
         <postgres.version>42.2.6</postgres.version>
         <swagger.version>2.9.2</swagger.version>
         <jackson.version>2.13.0</jackson.version>
-        <gunamrketcommondatalayer.version>0.0.1-SNAPSHOT</gunamrketcommondatalayer.version>
+        <gunamrketcommondatalayer.version>0.0.4</gunamrketcommondatalayer.version>
     </properties>
 
     <dependencies>

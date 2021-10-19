@@ -55,11 +55,15 @@ public class ProductService {
     }
 
     @Deprecated(since = "заменить на бач сейв")
-    public void saveList(List<Product> products){
+    public void saveList(List<Product> products) {
         products.forEach(this::save);
     }
 
     public void save(Product product) {
+        if (product.getProductId() == null) {
+            Long productId = productRepo.findMaxId();
+            product.setProductId(productId + 1L);
+        }
         productRepo.saveOrUpdate(product);
     }
 

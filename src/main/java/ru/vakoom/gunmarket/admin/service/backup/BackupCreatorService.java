@@ -17,6 +17,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
 
 @Slf4j
@@ -36,7 +37,7 @@ public class BackupCreatorService {
     private final String shopDir = "shop\\";
     private final String typeDir = "type\\";
 
-    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_hh-mm");
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_hh");
 
     public void create() {
         //ToDo добавить проверку на наличие директорий, создать если их нет
@@ -57,6 +58,8 @@ public class BackupCreatorService {
 
     private void createProductBackup() throws IOException {
         List<Product> products = productRepo.findAll();
+        //Вставка для того чтобы при инсерте продуктов не ругался на отсутствие офферов
+        products.forEach(p -> p.setOffer(new HashSet<>()));
         createBackup(products,productDir,"products-");
     }
 
